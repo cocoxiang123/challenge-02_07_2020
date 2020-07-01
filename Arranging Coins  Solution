@@ -50,3 +50,13 @@ var arrangeCoins = function(n) {
     
     
 };
+
+
+solution2:
+const arrangeCoins = n => {
+    let count = 1;
+    while (n >= count) {
+        n -= count++;
+    }
+    return count - 1;
+};
